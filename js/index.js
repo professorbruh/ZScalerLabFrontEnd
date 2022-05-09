@@ -24,3 +24,13 @@ function login() {
     },
   });
 }
+
+function register(){
+  var name = document.getElementById("name").value;
+  var emailId = document.getElementById("emailId").value;
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  var address = document.getElementById("address").value;
+  var ifscCode = document.getElementById("ifscCode").value;
+  var branchName = document.getElementById("branchName").value;
+  var password = document.getElementById("password1").value
+}
