@@ -3,7 +3,7 @@ var BASE_URL = "http://localhost:7080/";
 function login() {
   var email = document.getElementById("emailId").value;
   var password = document.getElementById("password").value;
-
+  sessionStorage.setItem("emailID", email);
   var loginData = {
     emailId: email,
     password: password,
