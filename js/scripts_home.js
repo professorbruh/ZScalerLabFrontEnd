@@ -6,6 +6,7 @@
 // 
 // Scripts
 // 
+var BASE_URL = "http://localhost:7080/";
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -24,3 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+
+document.getElementById("name").innerHTML = "SampleName"
+
