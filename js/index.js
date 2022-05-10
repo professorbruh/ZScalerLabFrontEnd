@@ -3,7 +3,7 @@ var BASE_URL = "http://localhost:7080/";
 function login() {
   var email = document.getElementById("emailId").value;
   var password = document.getElementById("password").value;
-  sessionStorage.setItem("emailID", email);
+  
   var loginData = {
     emailId: email,
     password: password,
@@ -15,12 +15,19 @@ function login() {
     contentType: "application/json",
     data: JSON.stringify(loginData),
     dataType: "json",
-
+    
     success: function (data) {
-      alert("Login Successful");
+      sessionStorage.setItem("emailId",email);
+      sessionStorage.setItem("jwt",data["jwt"]);
+      console.log(data)
+      alert("Login Success");
     },
     error: function (data) {
       alert("Login Failed");
     },
+
+
   });
 }
+
+
