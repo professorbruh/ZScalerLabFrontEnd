@@ -30,8 +30,8 @@ function login() {
   });
 }
 
-
 function register(){
+  var accountNumber = 1000000000000;
   var name = document.getElementById("name").value;
   var emailId = document.getElementById("emailId").value;
   var phoneNumber = document.getElementById("phoneNumber").value;
@@ -43,6 +43,7 @@ function register(){
   var registerData = {
     name: name,
     ifscCode: ifscCode,
+    accountNumber: accountNumber,
     phoneNumber: phoneNumber,
     address: address,
     branchName: branchName,
