@@ -5,8 +5,19 @@
   transform: translate(-50%, -50%);
 }
 
-.flexbutton{
+.flexbutton {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+}
+
+#header-front-page {
+  font-size: 50px;
+  font-weight: 600;
+  color: #212529;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+  background-clip: text;
+  text-shadow: 2px 2px 3px #BEBEBE;
+  -webkit-background-clip: text;
 }
