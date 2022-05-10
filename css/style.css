@@ -1,12 +1,83 @@
+.page-body{
+  background-color: #41B3A3;
+  background-image: url("/assets/bg3.svg");
+  background-position: 100px 50px; 
+  background-repeat: no-repeat;
+}
+
 .card {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
+  box-shadow: 4px 3px 8px 1px #414141;
+  width: 320px;
+  height: 450px;
+  background: #252324;
+  color: "orange";
+  box-sizing: border-box;
+  padding: 30px 30px;
+  opacity:.7;
+
+}
+
+.form-group{
+  color: #fff;
+}
+.card-header{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #E27D60;
 }
 
 .flexbutton {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+}
+
+.btn{
+
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+  border-color: #41B3A3;
+}
+
+.btn:active {
+  opacity: .5;
+}
+
+
+a.bootom-text{
+  color: white;
+}
+
+.bootom-tex :hover{
+  color:#41B3A3;
 }
