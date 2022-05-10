@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -56,21 +57,21 @@
                         <div class="inline">
                             <h5 class="font-weight-bold first">Email_Id:</h5>
                             <h5 class="second" id="emailId"></h5>
-                            <input type="text" class="form-control" name="emailId" id="emailId" />
+                            <input type="email" class="form-control" name="emailId" id="emailIdInput" />
                             <hr>
                         </div>
                 
                         <div class="inline">
                             <h5 class="font-weight-bold first">Old password:</h5>
                             <h5 class="second" id="old_password"></h5>
-                            <input type="text" class="form-control" name="old_password" id="old_password" />
+                            <input type="password" class="form-control" name="old_password" id="oldpasswordInput" />
                             <hr>
                         </div>
                 
                         <div class="inline">
                             <h5 class="font-weight-bold first">New password:</h5>
                             <h5 class="second" id="new_password"></h5>
-                            <input type="text" class="form-control" name="new_password" id="new_password" />
+                            <input type="password" class="form-control" name="new_password" id="newpasswordInput" />
                             <hr>
                         </div>
                         
@@ -82,6 +83,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts_home.js"></script>
+        <script src="js/settings.js"></script>
     </body>
 </html>
