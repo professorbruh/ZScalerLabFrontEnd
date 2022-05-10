@@ -20,7 +20,7 @@ function login() {
       sessionStorage.setItem("emailId",email);
       sessionStorage.setItem("jwt",data["jwt"]);
       console.log(data)
-      alert("Login Success");
+      window.location.href = "/ZScalerLabFrontEnd/home.html";
     },
     error: function (data) {
       alert("Login Failed");

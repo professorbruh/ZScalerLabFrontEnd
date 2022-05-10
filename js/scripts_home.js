@@ -27,5 +27,48 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-document.getElementById("name").innerHTML = "SampleName"
+var in_data =  {
+
+emailId:sessionStorage.getItem("emailId")
+
+}
+
+$.ajax({
+    type: "POST",
+    url: BASE_URL + "customers/getCustomer",
+    contentType: "application/json",
+    dataType: "json",
+    data: JSON.stringify(in_data),
+    headers:{
+        Authorization: 'Bearer ' + sessionStorage.getItem("jwt")        
+        },
+        success: function (data) {
+            console.log(data);
+            document.getElementById("name").innerHTML = data["customer"]["name"];
+            document.getElementById("account_number").innerHTML = data["customer"]["accountNumber"];
+            document.getElementById("ifsc_code").innerHTML = data["customer"]["ifscCode"];
+            document.getElementById("phone_number").innerHTML = data["customer"]["phoneNumber"];
+            document.getElementById("address").innerHTML = data["customer"]["address"];
+            document.getElementById("email_id").innerHTML = data["customer"]["emailId"];
+
+          },
+          error: function (data) {
+            alert("Login Failed");
+          },
+  });
+
+//   ajxReq.success( function ( data, status, jqXhr ) {
+//     console.log(data);
+//     });
+
+// ajxReq.error( function ( jqXhr, textStatus, errorMessage ) {
+//     $( "p" ).append( "The status is :" +textStatus);
+//     });
+
+
+
+
+
+document.getElementById("name").innerHTML = "SampleName";
+
 
