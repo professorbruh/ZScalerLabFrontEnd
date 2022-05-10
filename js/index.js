@@ -38,5 +38,30 @@ function register(){
   var address = document.getElementById("address").value;
   var ifscCode = document.getElementById("ifscCode").value;
   var branchName = document.getElementById("branchName").value;
-  var password = document.getElementById("password1").value
+  var password = document.getElementById("password").value;
+
+  var registerData = {
+    name: name,
+    ifscCode: ifscCode,
+    phoneNumber: phoneNumber,
+    address: address,
+    branchName: branchName,
+    emailId: emailId,
+    password: password,
+  }
+
+  $.ajax({
+    type: "POST",
+    url: BASE_URL + "customers/createCustomer",
+    contentType: "application/json",
+    data: JSON.stringify(registerData),
+    dataType: "json",
+
+    success: function (data) {
+      alert("Registration Successful");
+    },
+    error: function (data) {
+      alert("Registration Failed");
+    },
+  });
 }
