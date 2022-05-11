@@ -23,7 +23,8 @@ function login() {
       window.location.href = "/ZScalerLabFrontEnd/home.html";
     },
     error: function (data) {
-      alert("Login Failed");
+      console.log(data);
+      document.getElementById("error").innerHTML ='Invalid Login Details';
     },
 
 
