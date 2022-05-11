@@ -60,7 +60,6 @@ function register(){
 
     success: function (data) {
       alert("Registration Successful");
-      location.href = './index.html';
     },
     error: function (data) {
       alert("Registration Failed");
