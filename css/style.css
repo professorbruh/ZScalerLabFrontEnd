@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
 }
 
+.header-name{
+  color: #cacaca;
+}
+
 .card {
   position: absolute;
   top: 50%;
