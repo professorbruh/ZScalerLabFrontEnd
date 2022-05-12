@@ -1,21 +1,20 @@
 var BASE_URL = "http://localhost:7080/";
 
 function deposit(){
+    if(amount < 0) return;
     var amount = document.getElementById("amount").value;
     transact(amount);
 }
 
 function withdraw(){
-    alert("Hi");
+    if(amount < 0) return;
     var amount = document.getElementById("amount").value;
-    console.log(amount);
     amount = 0 - parseInt(amount);
-    console.log(amount);
     transact(amount);
 }
 
 function transact(amount){
-    var emailId = sessionStorage.getItem("emailId")
+    var emailId = sessionStorage.getItem("emailId");
     var transactData = {
         emailId: emailId,
         amount: amount,
@@ -54,4 +53,9 @@ function transact(amount){
           },
         
     })
+}
+
+function transfer(){
+    var sender = document.getElementById("emailId").value;
+    
 }
