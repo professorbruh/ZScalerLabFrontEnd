@@ -17,14 +17,31 @@ function login() {
     dataType: "json",
     
     success: function (data) {
+      
+      Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Log in successful!',
+        showConfirmButton: false,
+        timer: 1500
+      }).then(() =>{
       sessionStorage.setItem("emailId",email);
       sessionStorage.setItem("jwt",data["jwt"]);
       console.log(data)
-      window.location.href = "/ZScalerLabFrontEnd/home.html";
+      window.location.href = "/home.html";
+      });
     },
     error: function (data) {
-      console.log(data);
-      document.getElementById("error").innerHTML ='Invalid Login Details';
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Log in failed!',
+        showConfirmButton: false,
+        timer: 1500
+      }).then(()=>{
+        console.log(data);
+        document.getElementById("error").innerHTML ='Invalid Login Details';
+      })
     },
 
 
@@ -60,10 +77,24 @@ function register(){
     dataType: "json",
 
     success: function (data) {
-      alert("Registration Successful");
+      Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Registration Successful',
+        showConfirmButton: false,
+        timer: 1500
+      }).then(()=>{
+        location.href='./index.html';
+      })
     },
     error: function (data) {
-      alert("Registration Failed");
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Registration failed',
+        showConfirmButton: false,
+        timer: 1500
+      })
     },
   });
 }
