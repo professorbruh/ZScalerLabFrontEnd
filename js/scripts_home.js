@@ -46,10 +46,12 @@ $.ajax({
             console.log(data);
             document.getElementById("name").innerHTML = data["customer"]["name"];
             document.getElementById("account_number").innerHTML = data["customer"]["accountNumber"];
+            sessionStorage.setItem("accountNumber", data["customer"]["accountNumber"]);
             document.getElementById("ifsc_code").innerHTML = data["customer"]["ifscCode"];
             document.getElementById("phone_number").innerHTML = data["customer"]["phoneNumber"];
             document.getElementById("address").innerHTML = data["customer"]["address"];
             document.getElementById("email_id").innerHTML = data["customer"]["emailId"];
+            document.getElementById("branch").innerHTML = data["customer"]["branchName"]
 
           },
           error: function (data) {

@@ -56,6 +56,47 @@ function transact(amount){
 }
 
 function transfer(){
-    var sender = document.getElementById("emailId").value;
-    
+    var receiver = document.getElementById("account_number").value;
+    var sender = sessionStorage.getItem("accountNumber");
+    var amount = document.getElementById("amount").value;
+    if (amount < 0) return;
+    var transferData = {
+      sender: sender,
+      receiver: receiver,
+      amount: amount,
+    }
+
+    $.ajax({
+      type: "POST",
+      url: BASE_URL + "transaction/transfer",
+      contentType: "application/json",
+      data: JSON.stringify(transferData),
+      dataType: "json",
+      headers:{
+        Authorization: 'Bearer ' + sessionStorage.getItem("jwt")        
+      },
+      success: function (data) {
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: 'Transaction Successful',
+          showConfirmButton: false,
+          timer: 1500
+        }).then(()=>{
+          console.log(data)
+        })
+      },
+      error: function (data) {
+        Swal.fire({
+          position: 'top-center',
+          icon: 'error',
+          title: 'Transaction failed',
+          showConfirmButton: false,
+          timer: 1500
+        }).then(()=>{
+            console.log(data);
+        })
+      },
+
+    })
 }
