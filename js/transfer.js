@@ -1,8 +1,21 @@
 var BASE_URL = "http://localhost:7080/";
 
 function deposit(){
+    var amount = document.getElementById("amount").value;
+    transact(amount);
+}
+
+function withdraw(){
+    alert("Hi");
+    var amount = document.getElementById("amount").value;
+    console.log(amount);
+    amount = 0 - parseInt(amount);
+    console.log(amount);
+    transact(amount);
+}
+
+function transact(amount){
     var emailId = sessionStorage.getItem("emailId")
-    var amount = 100;
     var transactData = {
         emailId: emailId,
         amount: amount,
@@ -21,7 +34,7 @@ function deposit(){
             Swal.fire({
               position: 'top-center',
               icon: 'success',
-              title: 'Deposit Successful',
+              title: 'Transaction Successful',
               showConfirmButton: false,
               timer: 1500
             }).then(()=>{
@@ -32,7 +45,7 @@ function deposit(){
             Swal.fire({
               position: 'top-center',
               icon: 'error',
-              title: 'Deposit failed',
+              title: 'Transaction failed',
               showConfirmButton: false,
               timer: 1500
             }).then(()=>{
