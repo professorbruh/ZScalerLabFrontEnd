@@ -48,34 +48,39 @@
                     </div>
                 </nav>
                 <!-- Page content-->
-                <div class="container-fluid">
-                    <div class="content">
-                        <h4 class="font-weight-bol mb-5 text-center">Transfer the amount</h4>
-                
-                        <div class="inline">
-                            <h5 class="font-weight-bold first">Account_number:</h5>
-                            <h5 class="second"></h5>
-                            <input type="text" class="form-control" name="account_number" id="account_number" />
-                            <hr>
-                        </div>
-                
-                        <div class="inline">
-                            <h5 class="font-weight-bold first">Amount</h5>
-                            <h5 class="second"></h5>
-                            <input type="text" class="form-control" name="amount" id="amount" value="0" />
-                            <hr>
-                        </div>
-                        
-                    
-                </div>
                
+
+            <div class="card w-50" style="margin-top:100px;margin-left: auto;
+            margin-right: auto ">
+                <div class="card-header text-center">
+                  <h1 style="font-family: consolas; font-weight:bold;">Transfer the amount</h1>
+                </div>
+              <div class="card-body p-4" >
+
+                <br>
+                <div class="row justify-content-around">
+                    <input type="text" class="form-control" placeholder="Enter your Account Number" aria-label="account_number" aria-describedby="addon-wrapping" id="account_number" required >
+                </div>
+                <br>
+                <div class="row justify-content-around">
+                    <input type="text" class="form-control" placeholder="Enter the Amount" aria-label="amount" aria-describedby="addon-wrapping" id="amount" value="0">
+                </div>
+                <br>
+                <center>
+                    <div class="row justify-content-center">
+                      <div class="col-6">
+                        <a onclick="transfer();"  class="btn btn-dark">Amount Transfer </a>
+                      </div>
+                    </div>
+                  </center>
+                   <br />
+              </div>
             </div>
-           
-            <center><button class="btn btn-primary" href="#" onclick="transfer();">Transfer</button></center><br>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/transfer.js"></script>
+    </div>
     </body>
 </html>
