@@ -5,6 +5,12 @@ function update_password(){
     let new_password = $("#newpasswordInput").val()
 
 
+
+
+    if((email_input.length === 0)||(old_password.length === 0)||(new_password.length === 0)){
+        alert("Enter all the fields")
+        return
+    }
     // new password must be different from old password
 
     if(old_password === new_password){
@@ -14,12 +20,6 @@ function update_password(){
     data = {
         "emailId":email_input
     }
-
-    if((email_input.length === 0)||(old_password.length === 0)||(new_password.length === 0)){
-        alert("Enter all the fields")
-        return
-    }
-
     //validating email
 
     const validateEmail = (email) => {
