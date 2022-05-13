@@ -24,6 +24,21 @@
   opacity:.7;
 
 }
+.card1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 3px 8px 1px #414141;
+  width: 420px;
+  height: 750px;
+  background: #252324;
+  color: "orange";
+  box-sizing: border-box;
+  padding: 30px 30px;
+  opacity:.7;
+
+}
 
 .form-group{
   color: #fff;

@@ -11,60 +11,69 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index.js"></script>
-    <title>Register</title>
-  </head>
-  <body>   
-    <div class="card w-50">
-        <div class="card-header text-center">
-          <h1 style="font-family: consolas; font-weight:bold;">Register</h1>
-        </div>
-<div class="card-body p-4" >
+ </head>
+  <body class="page-body">
+    <div class="card1">
+      <div class="card-header text-center">
+        <h1>Register</h1>
+      </div>
+      <div class="card-body">
         <div class="row justify-content-around" >
-            <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping" id="name">
+          <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping" id="name">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="email" class="form-control" placeholder="Email Id" aria-label="emailId" aria-describedby="addon-wrapping" id="emailId">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="text" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="addon-wrapping" id="phoneNumber">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="text" class="form-control" placeholder="Address" aria-label="address" aria-describedby="addon-wrapping" id="address">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="text" class="form-control" placeholder="IFSC Code" aria-label="ifscCode" aria-describedby="addon-wrapping" id="ifscCode">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="text" class="form-control" placeholder="Branch Name" aria-label="branchName" aria-describedby="addon-wrapping" id="branchName">
+      </div>
+      <br>
+      <div class="row justify-content-around">
+          <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" id="password">
+      </div>
+      <br>
+      
+        <div class="form-group text-center">
+          <a onclick="register();" class="btn btn-dark">Register</a>
         </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="email" class="form-control" placeholder="Email Id" aria-label="emailId" aria-describedby="addon-wrapping" id="emailId">
-        </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="text" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="addon-wrapping" id="phoneNumber">
-        </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="text" class="form-control" placeholder="Address" aria-label="address" aria-describedby="addon-wrapping" id="address">
-        </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="text" class="form-control" placeholder="IFSC Code" aria-label="ifscCode" aria-describedby="addon-wrapping" id="ifscCode">
-        </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="text" class="form-control" placeholder="Branch Name" aria-label="branchName" aria-describedby="addon-wrapping" id="branchName">
-        </div>
-        <br>
-        <div class="row justify-content-around">
-            <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" id="password">
-        </div>
-        <br>
-        <center>
-        <div class="row justify-content-center">
-          <div class="col-6">
-            <a onclick="register();"  class="btn btn-outline-dark">Register</a>
-          </div>
-        </div>
-      </center>
-        <div style="padding-left: 1%;">Already have an account? <a href="index.html">Login here</a></div>
         <br />
-        <script src="js/index.js"></script>
+        <div class = "bottom-text text-center" >
+          <p style="color:#ed6109;" id="error"></p>
+
+          </div>
+      <div class = "bootom-text">
+        <a class = "bootom-text" href="index.html">Already have account.Login here!</a>
+      </div>
       </div>
     </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
   </body>
 </html>
+
+
+
+
