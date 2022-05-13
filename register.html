@@ -21,38 +21,50 @@
     <title>Register</title>
   </head>
   <body>   
-    <div class="card w-75">
+    <div class="card w-50">
         <div class="card-header text-center">
           <h1 style="font-family: consolas; font-weight:bold;">Register</h1>
         </div>
-        <div class="input-group flex-nowrap" >
+<div class="card-body p-4" >
+        <div class="row justify-content-around" >
             <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="addon-wrapping" id="name">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="email" class="form-control" placeholder="Email Id" aria-label="emailId" aria-describedby="addon-wrapping" id="emailId">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="text" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="addon-wrapping" id="phoneNumber">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="text" class="form-control" placeholder="Address" aria-label="address" aria-describedby="addon-wrapping" id="address">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="text" class="form-control" placeholder="IFSC Code" aria-label="ifscCode" aria-describedby="addon-wrapping" id="ifscCode">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="text" class="form-control" placeholder="Branch Name" aria-label="branchName" aria-describedby="addon-wrapping" id="branchName">
         </div>
-        <div class="input-group flex-nowrap">
+        <br>
+        <div class="row justify-content-around">
             <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" id="password">
         </div>
-        <div class="form-group text-center">
+        <br>
+        <center>
+        <div class="row justify-content-center">
+          <div class="col-6">
             <a onclick="register();"  class="btn btn-outline-dark">Register</a>
+          </div>
         </div>
+      </center>
         <div style="padding-left: 1%;">Already have an account? <a href="index.html">Login here</a></div>
         <br />
         <script src="js/index.js"></script>
-
+      </div>
     </div>
   </body>
 </html>
