@@ -88,7 +88,14 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+.card3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 10px rgb(125, 125, 125);
+}
 hr {
   margin: 1rem 0;
   color: inherit;
