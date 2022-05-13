@@ -49,6 +49,20 @@ function login() {
 }
 
 function register(){
+  Swal.fire({
+    title: "Please check you details once",
+    text: "confirm here to register",
+    icon: "information",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, register!",
+  }).then((result) => {
+    if (result.isConfirmed) {
+        document.getElementById("closeProfileModal").click();
+        Swal.fire("Congratulations", "Registration successful", "success");
+    }
+  });
   var accountNumber = 1000000000000;
   var name = document.getElementById("name").value;
   var emailId = document.getElementById("emailId").value;
