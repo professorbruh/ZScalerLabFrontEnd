@@ -6,7 +6,11 @@
 }
 
 .header-name{
-  color: #cacaca;
+  color: #E27D60;
+}
+
+.header-front-page{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card {
@@ -93,10 +97,16 @@
 }
 
 
-a.bootom-text{
+.bottom-text {
   color: white;
 }
 
-.bootom-tex :hover{
-  color:#41B3A3;
+.bottom-text-a {
+  color: #55d3c2;
+  text-decoration: none;
+}
+
+.bottom-text-a:hover {
+  color: #55d3c2;
+  text-decoration: underline;
 }
