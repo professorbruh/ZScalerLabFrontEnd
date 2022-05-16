@@ -6,7 +6,11 @@
 }
 
 .header-name{
-  color: #cacaca;
+  color: #E27D60;
+}
+
+.header-front-page{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card {
