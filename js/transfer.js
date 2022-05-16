@@ -54,7 +54,9 @@ function transact(amount){
         
     })
 }
-
+function success1(){
+  Swal.fire("Congratulations", "Registration successful", "success");
+}
 function transfer(){
     var receiver = document.getElementById("account_number").value;
     var sender = sessionStorage.getItem("emailId")
