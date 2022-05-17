@@ -22,7 +22,7 @@ body {
     font-family: 'Dancing Script', cursive;
     padding-top: 15px;
     position: absolute;
-    left: 45%;
+    left: 40%;
 }
 
 .navbar-top ul {
@@ -141,7 +141,8 @@ body {
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 1px 1px 8px 0 grey;
-    height: auto;
+    height:400px;
+    width: 500px;
     margin-bottom: 20px;
     padding: 20px 0 20px 50px;
 }
