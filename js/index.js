@@ -28,7 +28,7 @@ function login() {
       sessionStorage.setItem("emailId",email);
       sessionStorage.setItem("jwt",data["jwt"]);
       console.log(data)
-      window.location.href = "/home.html";
+      window.location.href = "/ZScalerLabFrontEnd/home.html";
       });
     },
     error: function (data) {
