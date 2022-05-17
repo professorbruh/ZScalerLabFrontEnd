@@ -52,7 +52,7 @@ $.ajax({
             document.getElementById("address").innerHTML = data["customer"]["address"];
             document.getElementById("email_id").innerHTML = data["customer"]["emailId"];
             document.getElementById("branch").innerHTML = data["customer"]["branchName"]
-
+            document.getElementById("balance").innerHTML = "₹ " +data["balance"]
           },
           error: function (data) {
             alert("Login Failed");
