@@ -2,13 +2,14 @@ BASE_URL = "http://localhost:7080/"
 function updateUser()
 {  
     var updateData = {
-        "emailId" : sessionStorage.getItem("email_Id"),
+        "emailId" : document.getElementById("emailId").value,
         "password": document.getElementById("password").value,
         "address": document.getElementById("address").value,
-        "phoneNumber":document.getElementById("phone_number").value,
+        "phoneNumber":document.getElementById("phoneNumber").value,
         "name" : document.getElementById("name").value
         
     }
+    if(updateData["emailId"] != '')
     
     console.log(updateData);
     $.ajax({
