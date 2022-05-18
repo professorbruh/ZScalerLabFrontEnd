@@ -21,12 +21,19 @@ function updateUser()
             Authorization: "Bearer " + sessionStorage.getItem("jwt"),
             },
 
-        success:function(data){
-            console.log(data);
-        },
-        error: function(data){
-            console.log(data);
-        }
+        Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Success',
+        showConfirmButton: false,
+        timer: 1500
+      }).then(() =>{
+      sessionStorage.clear();
+      });
+    },
+    error: function (data) {
+      window.location.href = "/profile.html";
+    },
 
     })
 }
