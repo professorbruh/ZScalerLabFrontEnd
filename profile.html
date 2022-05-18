@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body style="background:#9FE2BF">
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="home.html">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="settings.html">Settings</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="transfer.html">Transfer Money</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="transaction.html">Withdraw/Deposit</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="transfer_history.html">Transfer History</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <h1>Smart banking for smart people</h1>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="frontpage.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="frontpage.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="card w-50 h-60" style="margin-top:100px;margin-left: auto;
+                margin-right: auto ">
+                    <div class="card-header text-center">
+                      <h1 style="font-family: consolas; font-weight:bold;">Update Profile</h1>
+                    </div>
+                  <div class="card-body p-4" >
+                    <br>
+                    <div class="row justify-content-around">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping" id="name" required>
+                    </div>
+                    <br>
+                    <div class="row justify-content-around">
+                        <input type="text" class="form-control" placeholder="Phone Number" aria-label="phoneNumber" aria-describedby="addon-wrapping" id="phoneNumber" required>
+                    </div>
+                    <br>
+                    <div class="row justify-content-around">
+                        <input type="text" class="form-control" placeholder="Address" aria-label="address" aria-describedby="addon-wrapping" id="address" required>
+                    </div>
+                    <br>
+                    <div class="row justify-content-around">
+                        <input type="text" class="form-control" placeholder="EmailId" aria-label="emailid" aria-describedby="addon-wrapping" id="emailid" required>
+                    </div>
+                    <br>
+                    <div class="row justify-content-around">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" id="password" required>
+                    </div>
+                    <br>
+                    <center>
+                        <div class="row justify-content-center">
+                          <div class="col-6">
+                            <a class="btn btn-primary", id="update_button">Submit</a>
+                          </div>
+                        </div>
+                    </center>
+                       <br />
+                  </div>
+                </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/users.js"></script>
+    </body>
+</html>
