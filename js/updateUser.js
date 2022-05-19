@@ -21,18 +21,27 @@ function updateUser()
             Authorization: "Bearer " + sessionStorage.getItem("jwt"),
             },
 
+       success:function(data){
         Swal.fire({
-        position: 'top-center',
-        icon: 'success',
-        title: 'Success',
-        showConfirmButton: false,
-        timer: 1500
-      }).then(() =>{
-      sessionStorage.clear();
-      });
-    },
+            position: 'top-center',
+            icon: 'success',
+            title: 'Success',
+            showConfirmButton: false,
+            timer: 1500
+          }).then(() =>{
+          sessionStorage.clear();
+          });
+           window.location.href="/index.html";
+           sessionStorage.clear;
+       } 
+    ,
     error: function (data) {
-      window.location.href = "/profile.html";
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: 'Check your password maybe?'
+          })
     },
 
     })
