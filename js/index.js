@@ -3,7 +3,7 @@ var BASE_URL = "http://localhost:7080/";
 function login() {
   var email = document.getElementById("emailId").value;
   var password = document.getElementById("password").value;
-  
+
   var loginData = {
     emailId: email,
     password: password,
@@ -15,20 +15,20 @@ function login() {
     contentType: "application/json",
     data: JSON.stringify(loginData),
     dataType: "json",
-    
+
     success: function (data) {
-      
+
       Swal.fire({
         position: 'top-center',
         icon: 'success',
         title: 'Log in successful!',
         showConfirmButton: false,
         timer: 1500
-      }).then(() =>{
-      sessionStorage.setItem("emailId",email);
-      sessionStorage.setItem("jwt",data["jwt"]);
-      console.log(data)
-      window.location.href = "/home.html";
+      }).then(() => {
+        sessionStorage.setItem("emailId", email);
+        sessionStorage.setItem("jwt", data["jwt"]);
+        console.log(data)
+        window.location.href = "./home.html";
       });
     },
     error: function (data) {
@@ -38,9 +38,9 @@ function login() {
         title: 'Log in failed!',
         showConfirmButton: false,
         timer: 1500
-      }).then(()=>{
+      }).then(() => {
         console.log(data);
-        document.getElementById("error").innerHTML ='Invalid Login Details';
+        document.getElementById("error").innerHTML = 'Invalid Login Details';
       })
     },
 
@@ -48,7 +48,7 @@ function login() {
   });
 }
 
-function register(){
+function register() {
   Swal.fire({
     title: "Please check you details once",
     text: "confirm here to register",
@@ -59,8 +59,8 @@ function register(){
     confirmButtonText: "Yes, register!",
   }).then((result) => {
     if (result.isConfirmed) {
-        document.getElementById("closeProfileModal").click();
-        Swal.fire("Congratulations", "Registration successful", "success");
+      document.getElementById("closeProfileModal").click();
+      Swal.fire("Congratulations", "Registration successful", "success");
     }
   });
   var accountNumber = 1000000000000;
@@ -97,8 +97,8 @@ function register(){
         title: 'Registration Successful',
         showConfirmButton: false,
         timer: 1500
-      }).then(()=>{
-        location.href='./index.html';
+      }).then(() => {
+        location.href = './index.html';
       })
     },
     error: function (data) {
