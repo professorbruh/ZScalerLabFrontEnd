@@ -27,12 +27,12 @@ function updateUser()
             icon: 'success',
             title: 'Success',
             showConfirmButton: false,
-            timer: 1500
+            timer: 3000
           }).then(() =>{
           sessionStorage.clear();
+          window.location.href="/index.html";
           });
-           window.location.href="/index.html";
-           sessionStorage.clear;
+           
        } 
     ,
     error: function (data) {
