@@ -65,7 +65,7 @@ function success1(){
     timer: 1500
   }).then(()=>{
       $('#closebutton').click();
-      window.location.href="/home.html";
+      window.location.href="./home.html";
   })
 
 }
@@ -175,7 +175,7 @@ function failure()
           footer: "Payment gateway status returned failed"
        }).then(()=>{
           $('#closebutton').click();
-          window.location.href="/home.html";
+          window.location.href="./home.html";
        })
 
        }
@@ -189,7 +189,7 @@ function failure()
 
      }).then(()=>{
       $('#closebutton').click();
-      window.location.href="/home.html";
+      window.location.href="./home.html";
    })
      }
     }
